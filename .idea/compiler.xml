@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="order-integrations" />
+        <module name="sales-order-model" />
+        <module name="shared" />
+        <module name="transport-booking-model" />
+        <module name="type-adapters" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="dependencies" target="1.8" />
+      <module name="flightmanagement" target="1.8" />
+      <module name="integrations" target="1.5" />
+      <module name="models" target="1.5" />
+      <module name="move-mode" target="1.8" />
+      <module name="mvt-model" target="1.8" />
+      <module name="order-integrations" target="1.8" />
+      <module name="parent" target="1.8" />
+      <module name="root" target="1.5" />
+      <module name="sales-order-model" target="1.8" />
+      <module name="shared" target="1.8" />
+      <module name="test-dependencies" target="1.8" />
+      <module name="transport-booking-model" target="1.8" />
+      <module name="type-adapters" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

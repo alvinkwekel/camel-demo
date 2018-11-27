@@ -1,0 +1,32 @@
+<SalesOrder xmlns="http://model.liberition.com/sales-order/v1" >
+  <OrderDate>2018-09-29T15:49:45Z</OrderDate>
+  <OrderNumber>123</OrderNumber>
+  <ShippingAddress>
+    <Name>Alvin Kwekel</Name>
+    <StreetAddress>Museumstraat 1</StreetAddress>
+    <City>Amsterdam</City>
+    <PostalCode>1071 XX</PostalCode>
+    <Contry>NL</Contry>
+  </ShippingAddress>
+  <BillingAddress>
+    <Name>Alvin Kwekel</Name>
+    <StreetAddress>Museumstraat 1</StreetAddress>
+    <City>Amsterdam</City>
+    <PostalCode>1071 XX</PostalCode>
+    <Contry>NL</Contry>
+  </BillingAddress>
+  <Items>
+    <Item>
+      <ProductCode>A1</ProductCode>
+      <ProductDescription>string</ProductDescription>
+      <Quantity>1</Quantity>
+      <UnitWeight>4.0</UnitWeight>
+    </Item>
+    <Item>
+      <ProductCode>B2</ProductCode>
+      <ProductDescription>string</ProductDescription>
+      <Quantity>3</Quantity>
+      <UnitWeight>1.5</UnitWeight>
+    </Item>
+  </Items>
+</SalesOrder>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://model.liberition.com/sales-order/v1"
+           xmlns="http://model.liberition.com/sales-order/v1" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0"
+           elementFormDefault="qualified">
+  <xs:element name="SalesOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="OrderDate" type="xs:dateTime"/>
+        <xs:element name="OrderNumber" type="xs:string"/>
+        <xs:element name="ShippingAddress" type="address"/>
+        <xs:element name="BillingAddress" type="address"/>
+        <xs:element name="Items">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Item" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ProductCode" type="xs:string"/>
+                    <xs:element name="ProductDescription" type="xs:string"/>
+                    <xs:element name="Quantity" type="xs:int"/>
+                    <xs:element name="UnitWeight" type="xs:double"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="address">
+    <xs:sequence>
+      <xs:element name="Name" type="xs:string"/>
+      <xs:element name="StreetAddress" type="xs:string"/>
+      <xs:element name="City" type="xs:string"/>
+      <xs:element name="PostalCode" type="xs:string"/>
+      <xs:element name="Contry" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

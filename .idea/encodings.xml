@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$/dependencies" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/integrations/order" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/models/move" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/models/mvt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/models/sales-order" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/models/transport-booking" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/models/type-adapters" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shared" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test-dependencies" charset="UTF-8" />
+  </component>
+</project>

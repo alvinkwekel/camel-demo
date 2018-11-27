@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/dependencies/dependencies.iml" filepath="$PROJECT_DIR$/dependencies/dependencies.iml" />
+      <module fileurl="file://$PROJECT_DIR$/integrations/integrations.iml" filepath="$PROJECT_DIR$/integrations/integrations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/models/models.iml" filepath="$PROJECT_DIR$/models/models.iml" />
+      <module fileurl="file://$PROJECT_DIR$/integrations/order/order-integrations.iml" filepath="$PROJECT_DIR$/integrations/order/order-integrations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent/parent.iml" filepath="$PROJECT_DIR$/parent/parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/root.iml" filepath="$PROJECT_DIR$/root.iml" />
+      <module fileurl="file://$PROJECT_DIR$/models/sales-order/sales-order-model.iml" filepath="$PROJECT_DIR$/models/sales-order/sales-order-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shared/shared.iml" filepath="$PROJECT_DIR$/shared/shared.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test-dependencies/test-dependencies.iml" filepath="$PROJECT_DIR$/test-dependencies/test-dependencies.iml" />
+      <module fileurl="file://$PROJECT_DIR$/models/transport-booking/transport-booking-model.iml" filepath="$PROJECT_DIR$/models/transport-booking/transport-booking-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/models/type-adapters/type-adapters.iml" filepath="$PROJECT_DIR$/models/type-adapters/type-adapters.iml" />
+    </modules>
+  </component>
+</project>
