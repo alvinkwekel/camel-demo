@@ -1,6 +1,6 @@
 steps:
 - name: 'gcr.io/cloud-builders/mvn'
-  args: ['clean install']
+  args: ['clean', 'install', '--quiet']
 - name: 'gcr.io/cloud-builders/docker'
   args: ['tag', 'eu.gcr.io/liberition/cameldemo:latest', 'eu.gcr.io/liberition/cameldemo:$SHORT_SHA']
 - name: 'gcr.io/cloud-builders/docker'
