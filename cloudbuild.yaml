@@ -1,0 +1,9 @@
+steps:
+- name: 'gcr.io/cloud-builders/mvn'
+  args: ['clean install']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['tag', 'eu.gcr.io/liberition/cameldemo:latest', 'eu.gcr.io/liberition/cameldemo:$SHORT_SHA']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'eu.gcr.io/liberition/cameldemo:$SHORT_SHA']
+- name: 'gcr.io/cloud-builders/kubectl'
+  args: ['set', 'image', 'deployment/lib-cameldemo-1-dmo', 'connector=eu.gcr.io/liberition/cameldemo:$SHORT_SHA']

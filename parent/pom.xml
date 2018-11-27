@@ -199,6 +199,9 @@
             <!-- TODO Remove after bug in JDK is fixed
             https://stackoverflow.com/questions/53010200/maven-surefire-could-not-find-forkedbooter-class -->
             <useSystemClassLoader>false</useSystemClassLoader>
+            <!-- TODO Remove after bug is fixed
+            https://github.com/spring-projects/spring-boot/issues/6254#issuecomment-307151464 -->
+            <classesDirectory>${project.build.outputDirectory}</classesDirectory>
           </configuration>
           <executions>
             <execution>
