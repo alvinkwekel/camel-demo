@@ -5,12 +5,11 @@ move=done
 delete=true
 noop=true
 ## Write
-.marshal().json(JsonLibrary.Jackson)
 .to("file:/tmp/cameldemo?fileName=transport-booking.json")
-## Exception Handling
 
 # Develop Route
 ## Split
+https://github.com/apache/camel/tree/master/camel-core/src/main/docs/eips
 .convertBodyTo(SalesOrderList.class)
 .split(simple("${body.salesOrder}"))
 ## ONGL
@@ -19,6 +18,9 @@ noop=true
 .convertBodyTo(SalesOrder.class)
 .setHeader("bc_id", simple("${body.orderNumber}"))
 
+# Testing
+orderDate.with(plusBusinessDays.apply(2)).toLocalDate();
+Update json to 2018-10-02
 
 # CI/CD
 from("timer:foo?delay=3s")

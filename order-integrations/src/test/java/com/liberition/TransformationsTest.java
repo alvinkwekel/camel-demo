@@ -12,11 +12,14 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import java.io.File;
 import java.io.IOException;
+import java.time.ZonedDateTime;
+
+import static org.junit.Assert.assertEquals;
 
 public class TransformationsTest {
 
     @Test
-    public void testTranslation() throws IOException, JAXBException, JSONException {
+    public void testTransformation() throws IOException, JAXBException, JSONException {
 
         // Convert input XML file to SalesOrder object
         File input = new File("src/test/resources/com/liberition/order/sales-order-v1-sample-1.xml");
@@ -29,14 +32,20 @@ public class TransformationsTest {
         String outputJson = new ObjectMapper().writeValueAsString(transportBooking);
 
         // Read assertion JSON file
-        File assertion = new File("src/test/resources/com/liberition/order/transport-booking-sample-1.json");
+        File assertionFile = new File("src/test/resources/com/liberition/order/transport-booking-sample-1.json");
         /*assertion.createNewFile();
         FileUtils.writeStringToFile(assertion, outputJson, Charset.defaultCharset());*/
-        String assertionJson = FileUtils.readFileToString(assertion, "UTF-8");
+        String assertionJson = FileUtils.readFileToString(assertionFile, "UTF-8");
 
         // Compare assertion with output
         JSONAssert.assertEquals(assertionJson, outputJson, true);
     }
 
+    @Test
+    public void testDateTransformation() {
+
+        assertEquals("2018-12-09",
+            Transformations.transformDate(ZonedDateTime.parse("2018-12-07T10:30:00Z")));
+    }
 }
 
