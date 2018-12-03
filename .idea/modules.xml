@@ -3,9 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/dependencies/dependencies.iml" filepath="$PROJECT_DIR$/dependencies/dependencies.iml" />
-      <module fileurl="file://$PROJECT_DIR$/integrations/integrations.iml" filepath="$PROJECT_DIR$/integrations/integrations.iml" />
       <module fileurl="file://$PROJECT_DIR$/models/models.iml" filepath="$PROJECT_DIR$/models/models.iml" />
-      <module fileurl="file://$PROJECT_DIR$/integrations/order/order-integrations.iml" filepath="$PROJECT_DIR$/integrations/order/order-integrations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-integrations/order-integrations.iml" filepath="$PROJECT_DIR$/order-integrations/order-integrations.iml" />
       <module fileurl="file://$PROJECT_DIR$/parent/parent.iml" filepath="$PROJECT_DIR$/parent/parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/root.iml" filepath="$PROJECT_DIR$/root.iml" />
       <module fileurl="file://$PROJECT_DIR$/models/sales-order/sales-order-model.iml" filepath="$PROJECT_DIR$/models/sales-order/sales-order-model.iml" />

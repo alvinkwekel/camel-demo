@@ -8,6 +8,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/integrations/pom.xml" />
         <option value="$PROJECT_DIR$/models/move/pom.xml" />
         <option value="$PROJECT_DIR$/models/mvt/pom.xml" />
       </set>

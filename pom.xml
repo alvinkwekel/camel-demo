@@ -17,6 +17,6 @@
     <module>dependencies</module>
     <module>shared</module>
     <module>models</module>
-    <module>integrations</module>
+    <module>order-integrations</module>
   </modules>
 </project>
