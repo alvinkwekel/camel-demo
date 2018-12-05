@@ -30,9 +30,17 @@ Use list file
 
 
 # 2
-## Testing
-orderDate.with(plusBusinessDays.apply(2)).toLocalDate();
-Update json to 2018-10-02
+## Testing transformations
+testDateTransformation
+Debug on date
+
+import static com.liberition.TransformationUtils.plusBusinessDays;
+with(plusBusinessDays.apply(2))
+
+Update assertions
+## Integration test
+Diff route and revert to original
+Explain and run IT
 
 
 #3
