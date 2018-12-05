@@ -27,7 +27,7 @@ import java.nio.charset.Charset;
 @DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
 @DisableJmx
 @UseAdviceWith
-public class FileRouteIT {
+public class FileRoutesIT {
 
     @EndpointInject(uri = "direct:in")
     static ProducerTemplate SENDER;
@@ -41,7 +41,7 @@ public class FileRouteIT {
     @Before
     public void prepare() throws Exception {
 
-        camelContext.getRouteDefinition(FileRoute.ROUTEID).adviceWith(camelContext, new AdviceWithRouteBuilder() {
+        camelContext.getRouteDefinition(FileRoutes.ROUTEID).adviceWith(camelContext, new AdviceWithRouteBuilder() {
             @Override
             public void configure() throws Exception {
                 replaceFromWith(SENDER.getDefaultEndpoint());
