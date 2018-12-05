@@ -46,9 +46,12 @@ Explain and run IT
 #3
 ## CI/CD
 from("timer:foo?delay=3s")
-    .setBody(simple("Hello KLM ${date:now:yyyyMMddhhmmss}"))
+    .setBody(simple("Hello world! ${date:now:yyyyMMddhhmmss}"))
     .to("log:foo");
-    
+
+Google logs
+resource.type="container"
+resource.labels.pod_id:"lib-cameldemo-1-dmo"
  
  
  
