@@ -18,5 +18,8 @@ public class FileRoutes extends RouteBuilder {
             .transform(method(Transformations.class, "salesOrderToTransportBooking"))
             .to("log:com.liberition");
 
+        from("timer:foo?delay=3s")
+            .setBody(simple("Hello KLM ${date:now:yyyyMMddhhmmss}"))
+            .to("log:foo");
     }
 }
